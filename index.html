@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашние яйца высшей категории | Доставка на дом</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Блок 1 - Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-truck"></i> Бесплатная доставка от 30 шт!
+                    </div>
+                    <h1>
+                        Домашние яйца высшей категории
+                        <span class="highlight">с собственной фермы с доставкой на дом<br>при заказе от 30шт!</span>
+                    </h1>
+                    <p class="hero-subtitle">Натуральный продукт от здоровых кур с свободным выгулом</p>
+                    <button class="cta-button" onclick="openModal()">
+                        <i class="fas fa-shopping-cart"></i> Заказать сейчас
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <img src=images/chick2no.png alt="Домашняя курица с яйцами">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+    <!-- Блок 2 - Боли -->
+    <section class="pain-points">
+        <div class="container">
+            <h2>Устали искать качественные продукты?</h2>
+            <p class="subtitle">
+                <i class="fas fa-question-circle"></i> 
+                Нужен натуральный продукт, но не хотите разыскивать его по рынкам и селам?
+            </p>
+            <div class="pain-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <p style="max-width: 600px; margin: 0 auto; font-size: 1.1rem; color: #6B7280;">
+                Мы решили эту проблему за вас! Свежие домашние яйца теперь доступны с доставкой прямо до вашей двери.
+            </p>
+        </div>
+    </section>
+
+    <!-- Блок 3 - Преимущества -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            
+            <ul class="features-grid">
+                <li class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-egg"></i>
+                    </div>
+                    <h3>Отборные яйца</h3>
+                    <p>Только крупные яйца весом 65-75 грамм. Каждое яйцо проходит тщательный отбор.</p>
+                </li>
+
+                <li class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Натуральные корма</h3>
+                    <p>Наши курочки питаются только натуральными кормами и имеют свободный выгул на свежем воздухе.</p>
+                </li>
+
+                <li class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставка в день заказа при оформлении до 19 часов. Привезем прямо к вашей двери!</p>
+                </li>
+
+                <li class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Гарантия свежести</h3>
+                    <p>Вернем деньги, если что-то не устроит. Мы уверены в качестве нашей продукции.</p>
+                </li>
+
+                <li class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Удобный объем</h3>
+                    <p>Заказывайте от 30 до 300 штук. Подберем оптимальное количество для вашей семьи.</p>
+                </li>
+            </ul>
+
+            <!-- Акции -->
+            <div class="promotions">
+                <h3><i class="fas fa-gift"></i> Специальные предложения</h3>
+                <div class="promo-grid">
+                    <div class="promo-item">
+                        <i class="fas fa-plus-circle"></i>
+                        <h4>4+1=5!</h4>
+                        <p>При первом заказе от 40 шт десяток в подарок!</p>
+                    </div>
+                    <div class="promo-item">
+                        <i class="fas fa-calendar-day"></i>
+                        <h4>Скидка 5%</h4>
+                        <p>При заказе в понедельник или праздник</p>
+                    </div>
+                    <div class="promo-item">
+                        <i class="fas fa-user-friends"></i>
+                        <h4>Пенсионерам -3%</h4>
+                        <p>Скидка 3% независимо от дня недели!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Прайс -->
+            <h3 class="section-title" style="margin-top: 60px;">Наши цены</h3>
+            <ul class="pricing">
+                <li class="pricing-card">
+                    <h3>Стартовый</h3>
+                    <p>Идеально для пробы</p>
+                    <div class="price">
+                        <data value="300">300 ₽</data>
+                        <span>30 штук</span>
+                    </div>
+                    <button class="cta-button" onclick="openModal()" style="padding: 12px 30px; font-size: 1rem;">
+                        Заказать
+                    </button>
+                </li>
+
+                <li class="pricing-card popular">
+                    <h3>Семейный</h3>
+                    <p>Оптимальный выбор</p>
+                    <div class="price">
+                       <data value="550">550 ₽</data>
+                        
+                        <span>60 штук</span>
+                    </div>
+                    <div class="savings">
+                        <i class="fas fa-check-circle"></i> Выгода 50 руб
+                    </div>
+                    <button class="cta-button" onclick="openModal()" style="padding: 12px 30px; font-size: 1rem;">
+                        Заказать
+                    </button>
+                </li>
+
+                <li class="pricing-card">
+                    <h3>Оптовый</h3>
+                    <p>Максимальная выгода</p>
+                    <div class="price">
+                        <data value="850">850 ₽</data>
+                        <span>100 штук</span>
+                    </div>
+                    <div class="savings">
+                        <i class="fas fa-check-circle"></i> Выгода 150 руб
+                    </div>
+                    <button class="cta-button" onclick="openModal()" style="padding: 12px 30px; font-size: 1rem;">
+                        Заказать
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Блок 4 - Отзывы -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Что говорят наши клиенты</h2>
+            
+            <ul class="testimonials-grid">
+                <li class="testimonial-card">
+                  <figure>
+                    <blockquote>
+                        <p>Наконец-то нашла настоящие домашние яйца! Желток ярко-оранжевый, белок густой. Дети с удовольствием едят яичницу. Доставка быстрая, яйца всегда свежие. Заказываю уже третий раз!</p>
+                    </blockquote>
+                    <figcaption class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">
+                            <div class="review-header">
+                                <img src = "images/woman.webp"
+                                class = "review-avatar"
+                                width="80"
+                                heigt= "80"
+                                loading="lazy">
+                            </div>
+                        </div>
+                        <div class="author-info">
+                            <cite>Елена Петрова</cite>
+                            <div class="stars" aria-label = "Оценка 5 из 5 звезд">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                </li>
+
+                <li class="testimonial-card">
+                    <figure>
+                      <blockquote>
+                        <p>Очень удобно, что привозят прямо домой. Раньше ездили в деревню за яйцами, теперь такой необходимости нет. Качество отличное, яйца крупные, свежие. Рекомендую всем!
+                          </p>
+                      </blockquote>
+                    <figcaption class="testimonial-author">
+                           <div class="author-avatar" aria-hidden="true">
+                            <div class="review-header">
+                                <img src = "images/man.jpg"
+                                class = "review-avatar"
+                                width="80"
+                                heigt= "80"
+                                loading="lazy">
+                            </div>
+                        </div>
+                        <div class="author-info" aria-label="Оценка 5 из 5 звезд">
+                            <cite>Сергей Иванов</cite>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </figcaption>
+                    </figure>
+                </li>
+
+                <li class="testimonial-card">
+                    <figure>
+                      <blockquote>
+                        <p>Покупаю яйца для своей семьи уже полгода. Всегда свежайшие, ни одного плохого яйца не попалось. Отдельное спасибо за скидку пенсионерам! Очень приятно и выгодно.</p>
+                    </blockquote>
+                    <figcaption class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="review-header">
+                                <img src = "images/grand.jpg"
+                                class = "review-avatar"
+                                width="80"
+                                heigt= "80"
+                                loading="lazy">
+                            </div>
+                        </div>
+                        <div class="author-info">
+                            <cite>Анна Михайловна</cite>
+                            <div class="stars" aria-label="Оценка 5 из 5 звезд">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Блок 5 - FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Как осуществляется доставка?
+                       
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Доставка осуществляется на нашем транспорте до адреса, который вы укажете при оформлении заказа. Мы привезем яйца прямо к вашей двери в удобное время.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question" >
+                        <span>Как вы гарантируете качество яиц?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Наши курочки находятся под постоянным наблюдением специалистов. Мы проводим регулярную уборку помещений и используем только качественные натуральные корма. Каждое яйцо проходит проверку перед отправкой.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>В какое время вы осуществляете доставку?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Доставка осуществляется в период с 8:00 до 20:00 с понедельника по пятницу. При оформлении заказа вы можете указать удобное время доставки.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question" >
+                        <span>Какой срок годности яиц?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>При соблюдении всех норм хранения (в холодильнике при температуре +2...+10°C) срок годности составляет до 3 недель. Мы гарантируем свежесть каждой партии.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question" >
+                        <span>Есть ли у вас ветсправки и сертификаты?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Да, вся наша продукция сертифицирована. Ознакомиться с документами вы можете <a href="#" onclick="alert('Здесь будет ссылка на документы')">по следующей ссылке</a>. Мы работаем официально и гарантируем качество.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 6 - CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Домашние яйца на вашем столе уже сегодня!</h2>
+            <p>Оставьте заявку и мы свяжемся с вами для уточнения деталей</p>
+            <button class="cta-button" onclick="openModal()" style="background: white; color: var(--primary-dark);">
+                <i class="fas fa-phone-alt"></i> Оставить заявку
+            </button>
+            <br>
+            <p style="margin-top: 30px;">или позвоните нам по номеру</p>
+            <a href="tel:+79999999999" class="phone-number">+7 (999) 999-99-99</a>
+        </div>
+    </section>
+    </main>
+    <!-- Блок 7 - Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <address>
+                        <p><i class="fas fa-phone" aria-hidden="true"> <a href="tel:+79999999999"> </i> +7 (999) 999-99-99</a></p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@domashnie-yayca.ru">info@domaishnie-yayca.ru</a></p>
+                        <p><i class="fas fa-clock" aria-hidden="true"></i> Пн-Пт: 8:00 - 20:00</p>
+                    </address>
+                </div>
+                
+                <nav class="footer-section">
+                    <h3>Информация</h3>
+                    <ul>
+                        <li><a href="/about">О нас</a></li>
+                        <li><a href="/delivery">Доставка и оплата</a></li>
+                        <li><a href="/certificates">Сертификаты</a></li>
+                        <li><a href="/privacy">Политика конфиденциальности</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-section">
+                    <h3>Мы в соцсетях</h3>
+                    <p>Подписывайтесь на нас, чтобы быть в курсе акций и новостей</p>
+                    <ul class="social-links">
+                       <li> <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                        <li> <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li><a href="#" aria-label="VK"><i class="fab fa-vk"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Домашние яйца. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно формы -->
+    <dialog class="order-dialog" id="orderDialog">
+    	<form method="dialog">
+	<button class="close-dialog" aria-label="Закрыть">x</button>
+
+	<h2>оформить заказ</h2>
+	<p>Заполните форму и мы перезвоним вам в течении 15 минут</p>
+
+	<div class="form-group">
+		<label for="name">Ваше имя</label>
+		<input type="text" id="name" name="name" required>
+	</div>
+
+	<div class ="form-group">
+		<label for="phone">Телефон</label>
+		<input type="tel" id="phone" name="phone" required>
+	</div>
+
+	<button type="submit" class="submit-btn">Отправить заявку</button>
+
+	
+	
+	</form>		
+	
+	</dialog>
+    <script src="js/main.js"></script>
+</body>
+</html>
